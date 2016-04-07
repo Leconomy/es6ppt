@@ -1,0 +1,22 @@
+{
+  "name": "es6ppt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leconomy/es6ppt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leconomy/es6ppt/issues"
+  },
+  "homepage": "https://github.com/Leconomy/es6ppt#readme",
+  "devDependencies": {
+    "nodeppt": "^1.4.1"
+  }
+}
