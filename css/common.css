@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .align_l{
 	text-align: left;
 }
@@ -7,4 +8,15 @@
 	text-indent: 44px;
 	line-height: 26px;
 	text-align: left;
+=======
+.align_l{
+	text-align: left;
+}
+.annotation {
+	color: #00ffff;
+	font-size: 16px;
+	text-indent: 44px;
+	line-height: 26px;
+	text-align: left;
+>>>>>>> b7d2986b72aed4316a3462f7d342f652ba80e51e
 }
