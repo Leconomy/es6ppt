@@ -6,7 +6,7 @@ files: /js/demo.js,/css/demo.css
 [slide]
 
 # ESMAScript 6 之 Iterator
-## 演讲者：liujingji
+## 演讲者：let和const
 
 [slide]
 

@@ -7,7 +7,7 @@ files: /js/demo.js,/css/demo.css
 [slide]
 
 # ESMAScript 6 之 Class
-## 演讲者：liujingji
+## 演讲者：刘经济
 
 [slide]
 
