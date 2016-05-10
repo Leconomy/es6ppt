@@ -49,7 +49,7 @@ Object.assign(ClassName.prototype, {
 })
 ```
 类的内部所以定义的方法，都是不可枚举的
-类的属性名，可以采用表达式，但是需要吧变量放在[]中
+类的属性名，可以采用表达式，但是需要把变量放在[]中
 [slide]
 #constructor方法 {:&.flexbox.vleft}
 
@@ -76,7 +76,7 @@ new Person() instanceof Person
 
 实例对象的属性除非显示定义在其自身上，否则都是定义在prototype上
 
-类的所有实例共享一个prototype对象即实例对象的____proto____指向类
+类的所有实例共享一个prototype对象即实例对象的__\_\_proto\_\___指向类
 
 ```javascript
 let p1 = new Person('zhangsan', 30);
@@ -90,7 +90,7 @@ p2.say(); // 'I am a good man'
 let p3 = new Person('wangwu', 25);
 p3.say() // 'I am a good man'
 ```
-因此可以使用实例对象的__proto__改写原型，从而改写Class的原始定义，强烈建议不使用它
+因此可以使用实例对象的__\_\_proto\_\___改写原型，从而改写Class的原始定义，强烈建议不使用它
 
 
 [slide]
@@ -138,7 +138,7 @@ class A extends A{}
 由于函数都有prototype属性，因此A可以说任意函数
 [slide]
 #Object.getPrototypeOf() {:&.flexbox.vleft}
-Object.getPrototypeOf方法可以用来葱子类上获取父类
+Object.getPrototypeOf方法可以用来从子类上获取父类
 ```javascript
 Object.getPrototypeOf(B) === A
 // true
@@ -176,3 +176,26 @@ obj.toString() // MyObject:[object Object]
 父类的静态方法，可以被子类继承
 静态方法也是可以从super对象上调用
 ES6规定类的内部没有静态属性，但是ES7有一个提案即在属性名前加static
+
+
+
+[slide]
+#Class的取值函数 {:&.flexbox.vleft}
+
+在Class内部可以使用get和set关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为
+
+```javascript
+class MyClass {
+  get prop() {
+    return 'getter';
+  }
+  set prop(value) {
+    console.log('setter: '+value);
+  }
+}
+let inst = new MyClass();
+inst.prop = 123;
+// setter: 123
+inst.prop
+// 'getter'
+```

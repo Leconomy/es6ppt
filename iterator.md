@@ -59,7 +59,7 @@ Symbol.iterator本身是一个表达式，返回Symbol对象的iterator属性，
 [slide]
 #调用Iterator接口的场合 {:&.flexbox.vleft}
 1、解构赋值
-对数组喝Set结构进行结构赋值时，会默认调用Symbol.iterator方法
+对数组和Set结构进行结构赋值时，会默认调用Symbol.iterator方法
 
 2、扩展运算符
 
