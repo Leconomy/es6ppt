@@ -14,6 +14,8 @@ files: /js/demo.js,/css/demo.css
 # 基本语法 {:&.flexbox.vleft}
 ```javascript
 class ClassName {
+
+
 	
 	constructor(arg1, arg2) {    // 构造函数
 		this.arg1 = arg1;
